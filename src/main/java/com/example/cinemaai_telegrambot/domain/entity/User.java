@@ -16,7 +16,7 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID userId;
+    private UUID id;
 
     @Column
     private Long chatId;
@@ -24,8 +24,7 @@ public class User {
     @Column
     private String username;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "order_id", referencedColumnName = "id")
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     private CalculationOrder calculationOrder;
 
     public User(Long chatId, String username) {

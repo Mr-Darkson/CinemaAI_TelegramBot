@@ -24,7 +24,9 @@ public class BotMessages {
 
     public static final String CALCULATION_FORM_ALREADY_EXIST_ERROR = "*Форма для расчётов уже существует*. Для создания новой необходимо удалить старую */clear*";
 
-    public static final String CLEAR_FORM_SUCCESS = "*Форма для расчётов успешно удалена*ю. Если хотите создать новую, используйте /addmovie";
+    public static final String CLEAR_FORM_SUCCESS = "*Форма для расчётов успешно удалена*. Если хотите создать новую, используйте /addmovie";
 
     public static final String PLUG_IN_SHOW_DTO = "Пусто";
+
+    public static final String FINAL_SCORE_TEXT = "По моим рассчётам, оценка кинокритиков - ";
 }

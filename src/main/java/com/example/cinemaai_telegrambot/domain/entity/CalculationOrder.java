@@ -61,7 +61,8 @@ public class CalculationOrder {
     @Column
     private String description;
 
-    @OneToOne(mappedBy = "calculationOrder")
+    @OneToOne
+    @JoinColumn(name = "user_id")
     private User user;
 
     public CalculationOrder(User user) {

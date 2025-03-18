@@ -26,6 +26,7 @@ repositories {
 val telegramBotVersion = "6.9.7.0"
 
 dependencies {
+	implementation ("org.springframework.boot:spring-boot-starter-logging")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.telegram:telegrambots:$telegramBotVersion")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")

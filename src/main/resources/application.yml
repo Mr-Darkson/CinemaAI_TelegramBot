@@ -16,6 +16,14 @@ spring:
     password: postgres
     driver-class-name: org.postgresql.Driver
 
+logging:
+  level:
+    org.springframework: DEBUG
+    org.hibernate.SQL: DEBUG          # Логирование SQL-запросов
+    org.hibernate.type: TRACE         # Логирование параметров запросов
+    org.springframework.data.jpa: DEBUG # Логирование Spring Data JPA
+
+
 bot:
   name: HSE_CinemaAiBot
   token: 8114624051:AAEmDnZSRNT5N7cUVmH3sXs8joQmz4rhMwI
