@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: CinemaAI_TelegramBot
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cinema_ai_db
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+bot:
+  name: HSE_CinemaAiBot
+  token: 8114624051:AAEmDnZSRNT5N7cUVmH3sXs8joQmz4rhMwI
